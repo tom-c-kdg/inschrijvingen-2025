@@ -1,0 +1,557 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+@font-face { 
+  font-family:"Proxima Nova W08";
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/0020eb30-c98c-4a76-aaa5-c39374f14534.eot#iefix);
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/0020eb30-c98c-4a76-aaa5-c39374f14534.eot#iefix) format("eot"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/781c5453-0067-4e64-9386-7c0726d63d57.woff2) format("woff2"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/510df0e5-5b9f-4a1c-b46a-bcf1739bda43.woff) format("woff"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/47e08118-5050-469b-a40c-dc3b2307e87e.ttf) format("truetype"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/d93bd409-7380-4bb8-9d9f-d8035b5e0387.svg#d93bd409-7380-4bb8-9d9f-d8035b5e0387) format("svg");
+  font-display:swap;
+  font-weight:400;
+  font-style:normal;
+} 
+@font-face { 
+  font-family:"Proxima Nova W01";
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/bc15a635-a09b-40d1-a5c4-70310166177d.eot#iefix);
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/bc15a635-a09b-40d1-a5c4-70310166177d.eot#iefix) format("eot"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/129d49d6-5492-4ed1-96f7-0528c6d53abc.woff2) format("woff2"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/9c69c878-2255-4027-8632-ed3635cddf45.woff) format("woff"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/b7eb3871-e910-4522-9982-effb425a2714.ttf) format("truetype"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/a0d89860-20e5-4bc0-b6c5-eae8ae0ebbbf.svg#a0d89860-20e5-4bc0-b6c5-eae8ae0ebbbf) format("svg");
+  font-display:swap;
+  font-weight:400;
+  font-style:italic;
+} 
+@font-face { 
+  font-family:"Proxima Nova W01";
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot#iefix);
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot#iefix) format("eot"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/0d416408-95c6-4ad7-b08d-e60573d3b37d.woff2) format("woff2"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/d999c07b-a049-4eb5-b8a6-4f36ae25e67e.woff) format("woff"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/4d4a75f5-d32a-4a09-8665-133afd39cc37.ttf) format("truetype"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/8152bc4e-d700-4c78-b6be-326893e6f53f.svg#8152bc4e-d700-4c78-b6be-326893e6f53f) format("svg");
+  font-display:swap;
+  font-weight:700;
+  font-style:normal;
+} 
+@font-face { 
+  font-family:"Proxima Nova W01";
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/cb0c3396-af1a-4c16-95aa-8085e21044c7.eot#iefix);
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/cb0c3396-af1a-4c16-95aa-8085e21044c7.eot#iefix) format("eot"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/a6315c03-b55d-42b0-8ed6-79060867137d.woff2) format("woff2"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/46d5674a-f287-4240-b87a-f207aeb83064.woff) format("woff"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/9bd640b2-9a56-4391-b213-767ae9c30ef4.ttf) format("truetype"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/1500822b-1abc-4461-81dd-b48cfcf99020.svg#1500822b-1abc-4461-81dd-b48cfcf99020) format("svg");
+  font-display:swap;
+  font-weight:700;
+  font-style:italic;
+} 
+@media all{     
+  body {  
+    font-family:sans-serif;
+    font-size:0.5pxem;
+    line-height:2.625rem;
+    color:#1d1d1b;
+    background:transparent url(https://www.kdg.be/themes/custom/culet/images/bg-pattern-for-white.png) no-repeat right 125px;
+  }  
+}  
+@media (min-width: 768px){     
+  body {  
+    font-size:0.5625pxem;
+    line-height:2.4rem;
+  }  
+}  
+@media (min-width: 992px){     
+  body {  
+    font-size:0.625pxem;
+  }  
+}  
+@media all{ 
+  * { 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+  } 
+
+  ul:not(.toolbar-menu):not(.menu--no-spacing) { 
+    margin: 2rem 0; 
+    padding-left: 1em;
+  } 
+
+  .entity-paragraphs-item:not(.paragraph--type--pt-content-list):not(.paragraph--type--pt-system-component) ul:first-child  { 
+    margin-top: 0;
+  } 
+
+  .entity-paragraphs-item:not(.paragraph--type--pt-content-list):not(.paragraph--type--pt-system-component) ul:last-child  { 
+    margin-bottom: 0;
+  } 
+}     
+
+@media screen and (min-width: 768px){ 
+  .row.row--style-eq-height > [class^="col-"], .row.row--style-eq-height > [class*=" col-"] { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -ms-flex-direction: column; 
+    flex-direction: column;
+  } 
+}     
+
+@media all{ 
+  .pt-columns-layout.pt-style-none:not(.pt-style-with-separator) > .content { 
+    margin-bottom: -3rem;
+  } 
+
+  .pt-columns-layout:not(.pt-style-background) { 
+    padding-bottom: 0 !important; 
+    padding-top: 0 !important;
+  } 
+
+  body:not(.path-frontpage) article.ct-reusable-content.full > .field--items > .field--item:first-child > .entity-paragraphs-item { 
+    margin-top: 0;
+  } 
+
+  .form-group:last-child { 
+    margin-bottom: 0;
+  } 
+
+  .form-group:last-child { 
+    margin-bottom: 3rem;
+  } 
+
+  body { 
+    margin: 0;
+  } 
+
+  body { 
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+    font-size: 14px; 
+    line-height: 1.428571429; 
+    color: #333; 
+    background-color: #fff;
+  } 
+
+  body { 
+    position: relative;
+  } 
+
+  body { 
+    font-family: "Proxima Nova W08",Verdana,Sans-Serif; 
+    line-height: 2.625rem; 
+    color: #1d1d1b; 
+    font-size: 2rem;
+  } 
+}     
+
+@media (min-width: 768px){ 
+  body { 
+    font-size: 1.8rem;
+  } 
+
+  body { 
+    line-height: 2.4rem;
+  } 
+}     
+
+@media all{ 
+  body { 
+    overflow-y: hidden;
+  } 
+
+  body { 
+    overflow-x: hidden;
+  } 
+
+  body { 
+    padding-right: 0px !important;
+  } 
+
+  html { 
+    font-family: sans-serif; 
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%;
+  } 
+
+  html { 
+    font-size: 10px; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  } 
+
+  html { 
+    font-size: 0.5pxem;
+  } 
+}     
+
+@media (min-width: 768px){ 
+  html { 
+    font-size: 0.5625pxem;
+  } 
+}     
+
+@media (min-width: 992px){ 
+  html { 
+    font-size: 0.625pxem;
+  } 
+}     
+
+@media all{ 
+  html { 
+    overflow-x: hidden;
+  } 
+
+  ul:not(.toolbar-menu):not(.menu--no-spacing) li  { 
+    margin-top: 1rem;
+  } 
+
+  :before,:after { 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+  } 
+
+  html ::selection, body ::selection { 
+    background: #FFF203;
+  } 
+
+  strong { 
+    font-weight: bold;
+  } 
+
+  strong { 
+    font-family: "Proxima Nova W01",Verdana,Sans-Serif; 
+    font-weight: 700;
+  } 
+}     
+
+@font-face { 
+  font-family:"Proxima Nova W08";
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/0020eb30-c98c-4a76-aaa5-c39374f14534.eot#iefix);
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/0020eb30-c98c-4a76-aaa5-c39374f14534.eot#iefix) format("eot"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/781c5453-0067-4e64-9386-7c0726d63d57.woff2) format("woff2"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/510df0e5-5b9f-4a1c-b46a-bcf1739bda43.woff) format("woff"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/47e08118-5050-469b-a40c-dc3b2307e87e.ttf) format("truetype"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/d93bd409-7380-4bb8-9d9f-d8035b5e0387.svg#d93bd409-7380-4bb8-9d9f-d8035b5e0387) format("svg");
+  font-display:swap;
+  font-weight:400;
+  font-style:normal;
+} 
+@font-face { 
+  font-family:"Proxima Nova W01";
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/bc15a635-a09b-40d1-a5c4-70310166177d.eot#iefix);
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/bc15a635-a09b-40d1-a5c4-70310166177d.eot#iefix) format("eot"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/129d49d6-5492-4ed1-96f7-0528c6d53abc.woff2) format("woff2"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/9c69c878-2255-4027-8632-ed3635cddf45.woff) format("woff"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/b7eb3871-e910-4522-9982-effb425a2714.ttf) format("truetype"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/a0d89860-20e5-4bc0-b6c5-eae8ae0ebbbf.svg#a0d89860-20e5-4bc0-b6c5-eae8ae0ebbbf) format("svg");
+  font-display:swap;
+  font-weight:400;
+  font-style:italic;
+} 
+@font-face { 
+  font-family:"Proxima Nova W01";
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot#iefix);
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot#iefix) format("eot"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/0d416408-95c6-4ad7-b08d-e60573d3b37d.woff2) format("woff2"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/d999c07b-a049-4eb5-b8a6-4f36ae25e67e.woff) format("woff"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/4d4a75f5-d32a-4a09-8665-133afd39cc37.ttf) format("truetype"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/8152bc4e-d700-4c78-b6be-326893e6f53f.svg#8152bc4e-d700-4c78-b6be-326893e6f53f) format("svg");
+  font-display:swap;
+  font-weight:700;
+  font-style:normal;
+} 
+@font-face { 
+  font-family:"Proxima Nova W01";
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/cb0c3396-af1a-4c16-95aa-8085e21044c7.eot#iefix);
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/cb0c3396-af1a-4c16-95aa-8085e21044c7.eot#iefix) format("eot"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/a6315c03-b55d-42b0-8ed6-79060867137d.woff2) format("woff2"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/46d5674a-f287-4240-b87a-f207aeb83064.woff) format("woff"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/9bd640b2-9a56-4391-b213-767ae9c30ef4.ttf) format("truetype"),url(https://www.kdg.be/themes/custom/culet/fonts/proxima-nova/Fonts/1500822b-1abc-4461-81dd-b48cfcf99020.svg#1500822b-1abc-4461-81dd-b48cfcf99020) format("svg");
+  font-display:swap;
+  font-weight:700;
+  font-style:italic;
+} 
+@font-face { 
+  font-family:'kdg-icons';
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/kdg-icons/Fonts/kdg-icons.eot?28ejje=);
+  src:url(https://www.kdg.be/themes/custom/culet/fonts/kdg-icons/Fonts/kdg-icons.eot?28ejje=#iefix) format('embedded-opentype'),url(https://www.kdg.be/themes/custom/culet/fonts/kdg-icons/Fonts/kdg-icons.ttf?28ejje=) format('truetype'),url(https://www.kdg.be/themes/custom/culet/fonts/kdg-icons/Fonts/kdg-icons.woff?28ejje=) format('woff'),url(https://www.kdg.be/themes/custom/culet/fonts/kdg-icons/Fonts/kdg-icons.svg?28ejje=#kdg-icons) format('svg');
+  font-display:swap;
+  font-weight:normal;
+  font-style:normal;
+} 
+@media all{     
+  body {  
+    font-family:sans-serif;
+    font-size:0.5pxem;
+    line-height:2.625rem;
+    color:#1d1d1b;
+    background:transparent url(https://www.kdg.be/themes/custom/culet/images/bg-pattern-for-white.png) no-repeat right 125px;
+  }  
+}  
+@media (min-width: 768px){     
+  body {  
+    font-size:0.5625pxem;
+    line-height:2.4rem;
+  }  
+}  
+@media (min-width: 992px){     
+  body {  
+    font-size:0.625pxem;
+  }  
+}  
+@media all{ 
+  * { 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+  } 
+
+  ul:not(.toolbar-menu):not(.menu--no-spacing) { 
+    margin: 2rem 0; 
+    padding-left: 1em;
+  } 
+
+  .entity-paragraphs-item:not(.paragraph--type--pt-content-list):not(.paragraph--type--pt-system-component) ul:first-child  { 
+    margin-top: 0;
+  } 
+
+  .entity-paragraphs-item:not(.paragraph--type--pt-content-list):not(.paragraph--type--pt-system-component) ul:last-child  { 
+    margin-bottom: 0;
+  } 
+}     
+
+@media screen and (min-width: 768px){ 
+  .row.row--style-eq-height > [class^="col-"], .row.row--style-eq-height > [class*=" col-"] { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -ms-flex-direction: column; 
+    flex-direction: column;
+  } 
+}     
+
+@media all{ 
+  .pt-columns-layout.pt-style-none:not(.pt-style-with-separator) > .content { 
+    margin-bottom: -3rem;
+  } 
+
+  .pt-columns-layout:not(.pt-style-background) { 
+    padding-bottom: 0 !important; 
+    padding-top: 0 !important;
+  } 
+
+  body:not(.path-frontpage) article.ct-reusable-content.full > .field--items > .field--item:first-child > .entity-paragraphs-item { 
+    margin-top: 0;
+  } 
+
+  .form-group:last-child { 
+    margin-bottom: 0;
+  } 
+
+  .form-group:last-child { 
+    margin-bottom: 3rem;
+  } 
+
+  body { 
+    margin: 0;
+  } 
+
+  body { 
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+    font-size: 14px; 
+    line-height: 1.428571429; 
+    color: #333; 
+    background-color: #fff;
+  } 
+
+  body { 
+    position: relative;
+  } 
+
+  body { 
+    font-family: "Proxima Nova W08",Verdana,Sans-Serif; 
+    line-height: 2.625rem; 
+    color: #1d1d1b; 
+    font-size: 2rem;
+  } 
+}     
+
+@media (min-width: 768px){ 
+  body { 
+    font-size: 1.8rem;
+  } 
+
+  body { 
+    line-height: 2.4rem;
+  } 
+}     
+
+@media all{ 
+  body { 
+    overflow-y: hidden;
+  } 
+
+  body { 
+    overflow-x: hidden;
+  } 
+
+  body { 
+    padding-right: 0px !important;
+  } 
+
+  html { 
+    font-family: sans-serif; 
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%;
+  } 
+
+  html { 
+    font-size: 10px; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  } 
+
+  html { 
+    font-size: 0.5pxem;
+  } 
+}     
+
+@media (min-width: 768px){ 
+  html { 
+    font-size: 0.5625pxem;
+  } 
+}     
+
+@media (min-width: 992px){ 
+  html { 
+    font-size: 0.625pxem;
+  } 
+}     
+
+@media all{ 
+  html { 
+    overflow-x: hidden;
+  } 
+
+  ul:not(.toolbar-menu):not(.menu--no-spacing) li { 
+    margin-top: 1rem;
+  } 
+
+  :before,:after { 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+  } 
+
+  html ::selection, body ::selection { 
+    background: #FFF203;
+  } 
+
+  a { 
+    background-color: transparent;
+  } 
+
+  a { 
+    color: #337ab7; 
+    text-decoration: none;
+  } 
+
+  a { 
+    color: #0080a1; 
+    text-decoration: underline;
+  } 
+
+  .btn { 
+    display: inline-block; 
+    margin-bottom: 0; 
+    font-weight: normal; 
+    text-align: center; 
+    white-space: nowrap; 
+    vertical-align: middle; 
+    -ms-touch-action: manipulation; 
+    touch-action: manipulation; 
+    cursor: pointer; 
+    background-image: none; 
+    border: 1px solid transparent; 
+    padding: 6px 12px; 
+    font-size: 14px; 
+    line-height: 1.428571429; 
+    border-radius: 4px; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+  } 
+
+  .btn-primary { 
+    color: #fff; 
+    background-color: #337ab7; 
+    border-color: #2e6da4;
+  } 
+
+  .btn { 
+    border-radius: 4px; 
+    border: none; 
+    color: #0080a1; 
+    font-family: "Proxima Nova W01",Verdana,Sans-Serif; 
+    position: relative; 
+    text-decoration: none; 
+    white-space: normal; 
+    line-height: 2.625rem; 
+    padding: 1.2rem; 
+    font-size: 2rem;
+  } 
+}     
+
+@media (min-width: 768px){ 
+  .btn { 
+    font-size: 1.8rem;
+  } 
+
+  .btn { 
+    line-height: 2.4rem;
+  } 
+}     
+
+@media all{ 
+  a.btn-primary { 
+    background-color: #0080a1; 
+    color: #ffffff;
+  } 
+
+  a.chevron-after.btn-primary { 
+    color: #ffffff;
+  } 
+
+  p { 
+    margin: 0 0 10px;
+  } 
+
+  p { 
+    margin: 0rem 0rem 1rem 0;
+  } 
+
+  i { 
+    font-family: "Proxima Nova W01",Verdana,Sans-Serif; 
+    font-style: italic;
+  } 
+
+  .chevron-after i  { 
+    font-size: 0.6em; 
+    color: #0080a1; 
+    display: inline-block;
+  } 
+
+  .chevron-after i  { 
+    margin-left: 0.5rem;
+  } 
+
+  .btn > i.icon  { 
+    display: none; 
+    font-size: 1.2rem; 
+    max-height: 1.2rem; 
+    text-decoration: none;
+  } 
+}     
+
+@media (min-width: 768px){ 
+  .btn > i.icon  { 
+    display: inline-block;
+  } 
+}     
+
+@media all{ 
+  .icon:before { 
+    font-family: "kdg-icons" !important; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    line-height: 1; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+  } 
+
+  .icon-chevron:before { 
+    content: "\e905";
+  } 
+
+  button.btn-default .icon-chevron::before, button.btn-default .icon-chevron::after, button.btn-primary .icon-chevron::before, button.btn-primary .icon-chevron::after, button.btn-secondary .icon-chevron::before, button.btn-secondary .icon-chevron::after, button.btn-blue .icon-chevron::before, button.btn-blue .icon-chevron::after, button.btn-info .icon-chevron::before, button.btn-info .icon-chevron::after, button.btn-warning .icon-chevron::before, button.btn-warning .icon-chevron::after, button.btn-danger .icon-chevron::before, button.btn-danger .icon-chevron::after, input.btn-default .icon-chevron::before, input.btn-default .icon-chevron::after, input.btn-primary .icon-chevron::before, input.btn-primary .icon-chevron::after, input.btn-secondary .icon-chevron::before, input.btn-secondary .icon-chevron::after, input.btn-blue .icon-chevron::before, input.btn-blue .icon-chevron::after, input.btn-info .icon-chevron::before, input.btn-info .icon-chevron::after, input.btn-warning .icon-chevron::before, input.btn-warning .icon-chevron::after, input.btn-danger .icon-chevron::before, input.btn-danger .icon-chevron::after, a.btn-default .icon-chevron::before, a.btn-default .icon-chevron::after, a.btn-primary .icon-chevron::before, .paragraph--type--pt-tabs ul.tabs-bar li.tab--blue-button a .icon-chevron::before, a.btn-primary .icon-chevron::after, .paragraph--type--pt-tabs ul.tabs-bar li.tab--blue-button a .icon-chevron::after, a.btn-secondary .icon-chevron::before, a.btn-secondary .icon-chevron::after, a.btn-blue .icon-chevron::before, a.btn-blue .icon-chevron::after, a.btn-info .icon-chevron::before, a.btn-info .icon-chevron::after, a.btn-warning .icon-chevron::before, a.btn-warning .icon-chevron::after, a.btn-danger .icon-chevron::before, a.btn-danger .icon-chevron::after { 
+    color: #ffffff;
+  } 
+}     
+
+
+
